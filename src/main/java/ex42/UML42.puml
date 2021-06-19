@@ -1,0 +1,20 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class SplittingData{
+ListConverter()
+}
+class ReadFile{
+Read()
+}
+class WriteFile{
+CreateFile()
+WriteToFile()
+}
+
+
+SplittingData  <|-- ReadFile
+WriteFile <|-- SplittingData
+
+
+@enduml

@@ -1,15 +1,18 @@
-package ex41;
-
+package ex42;
+/*
+ *  UCF COP3330 Summer 2021 Assignment 3 Solution
+ *  Copyright 2021 Alek Dussuau
+ */
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 
-public class WriteFile {
+public class WriteFile_42 {
 
     public static boolean createFile(){
         try {
-        File file = new File("resources/exercise41_output.txt");
+        File file = new File("resources/exercise42_output.txt");
 
         if(!file.exists()){
 
@@ -22,14 +25,14 @@ public class WriteFile {
         return false;
     }
 
-    public static boolean write(List<String> sortedNames){
+    public static boolean write(List<String[]> list){
         FileWriter output_file = null;
         try {
-            output_file = new FileWriter("resources/exercise41_output.txt");
+            output_file = new FileWriter("resources/exercise42_output.txt");
 
-            String output = String.format("Total of %d names\n--------------------\n", sortedNames.size());
-            for(int i = 0; i < sortedNames.size(); i++){
-                output += sortedNames.get(i) + "\n";
+            String output = ("Last      First     Salary\n--------------------------\n");
+            for(int i = 0; i < list.size(); i++){
+                output += String.format("%-9s %-9s %-6s\n",(list.get(i))[0],(list.get(i))[1],(list.get(i))[2]);
             }
 
             output_file.write(output);

@@ -1,5 +1,8 @@
 package ex41;
-
+/*
+ *  UCF COP3330 Summer 2021 Assignment 3 Solution
+ *  Copyright 2021 Alek Dussuau
+ */
 
 /*
                     Pseudo Code
@@ -19,9 +22,9 @@ import java.util.List;
 public class App41 {
 
     static public void  main(String[] args){
-        ReadFile RF = new ReadFile();
+        ReadFile_41 RF = new ReadFile_41();
         OrganizeAlphabetically OG = new OrganizeAlphabetically();
-        WriteFile WF = new WriteFile();
+        WriteFile_41 WF = new WriteFile_41();
 
         List<String> names = RF.Read();
 
