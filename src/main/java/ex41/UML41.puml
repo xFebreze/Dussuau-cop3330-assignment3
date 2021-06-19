@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class OrganizeAlpha{
+Organize()
+}
+class ReadFile{
+Read()
+}
+class WriteFile{
+CreateFile()
+WriteToFile()
+}
+
+
+OrganizeAlpha  <|-- ReadFile
+WriteFile <|-- OrganizeAlpha
+
+@enduml

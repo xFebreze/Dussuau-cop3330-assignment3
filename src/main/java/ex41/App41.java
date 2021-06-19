@@ -5,14 +5,13 @@ package ex41;
                     Pseudo Code
 
     *(ReadFile) read the text from the input file
-        -Store the file into a String
-        -Put the String into an array an seperate by newline
-        -Store names into a list of maps
-    *(App41) Store the information from the input file into a list
-        -
+        -Store the file into by line into a list
+        -return the list
     *(OrganizeAlphabetically) Organize the file in alphabetical order
+        -sort the list
     *(WriteFile) Output the organized list out to a new file
-
+        -create a file
+        -write an output for the file
  */
 
 import java.util.List;
