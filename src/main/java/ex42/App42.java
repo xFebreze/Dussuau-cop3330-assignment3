@@ -3,9 +3,6 @@ package ex42;
  *  UCF COP3330 Summer 2021 Assignment 3 Solution
  *  Copyright 2021 Alek Dussuau
  */
-
-import java.util.List;
-
 /*
                     Pseudo Code
 
@@ -19,6 +16,9 @@ import java.util.List;
         -write an output for the file
 
  */
+import java.util.List;
+
+
 public class App42 {
 
     public static void main(String[] args){

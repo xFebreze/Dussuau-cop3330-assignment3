@@ -31,7 +31,7 @@ public class TestWriteFile42 {
 
 
         boolean expected = true;
-        boolean actual = true;AppTest.write(list);
+        boolean actual = AppTest.write(list);
         assertEquals(expected, actual);
     }
 
