@@ -1,4 +1,4 @@
-package ex43;
+package ex45;
 /*
  *  UCF COP3330 Summer 2021 Assignment 3 Solution
  *  Copyright 2021 Alek Dussuau
@@ -6,13 +6,13 @@ package ex43;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.List;
 
-public class IndexHtml {
+public class WriteFile45 {
 
-    public static boolean createFile(String htmlPath){
+    public static boolean createFile(String fileName){
+        String path = String.format("resources/%s.txt", fileName);
         try {
-            File file = new File(htmlPath);
+            File file = new File(path);
 
             if(!file.exists()){
 
@@ -26,14 +26,13 @@ public class IndexHtml {
         return false;
     }
 
-    public static boolean writeFile(String htmlPath, String name, String author){
+    public static boolean writeFile(String string, String name){
+        String path = String.format("resources/%s.txt", name);
         FileWriter output_file = null;
         try {
-            output_file = new FileWriter(htmlPath);
+            output_file = new FileWriter(path);
 
-            String output = "<html>\n<head>\n";
-            output += String.format("\t<title>%s</title>\n\t<meta name=\"author\" content=\"%s\">\n",name,author);
-            output += "</head>\n</html>";
+            String output = string;
 
             output_file.write(output);
             output_file.close();

@@ -1,0 +1,21 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class ReadFile{
+Read()
+}
+class WordCounter{
+wordCounter()
+}
+class Histogram{
+sort()
+createHistogram()
+}
+
+
+WordCounter <|-- ReadFile
+Histogram <|-- WordCounter
+
+
+
+@enduml
