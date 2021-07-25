@@ -9,6 +9,10 @@ import java.util.List;
 public class SplittingData {
 
     public static List<String[]> ListConverter(List<String> list){
+        //make a new array list to return
+        //split the data that we read in from the file
+        //save in new temp array list so we can have organized data
+
         List<String[]> temp = new ArrayList<String[]>();
 
         for(int i = 0; i < list.size(); i++){

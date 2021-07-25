@@ -9,6 +9,8 @@ import java.util.List;
 public class OrganizeAlphabetically {
 
     public static List<String> organize(List<String> pog){
+        //sorts a list of strings
+        //returns sorted list
         Collections.sort(pog);
         return pog;
     }

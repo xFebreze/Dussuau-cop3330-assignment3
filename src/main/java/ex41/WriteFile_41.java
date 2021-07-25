@@ -11,6 +11,8 @@ import java.util.List;
 public class WriteFile_41 {
 
     public static boolean createFile(){
+        //creates a file
+
         try {
         File file = new File("resources/exercise41_output.txt");
 
@@ -26,6 +28,11 @@ public class WriteFile_41 {
     }
 
     public static boolean write(List<String> sortedNames){
+        //Takes in a file variable
+        //Make a file writer so we can write to the file
+        //make a loop so we can output data to file in a organized fashion
+        //close file
+
         FileWriter output_file = null;
         try {
             output_file = new FileWriter("resources/exercise41_output.txt");

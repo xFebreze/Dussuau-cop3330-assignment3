@@ -11,7 +11,7 @@ public class TestIndexHtml {
         IndexHtml AppTest = new IndexHtml();
 
         boolean expected = true;
-        boolean actual = AppTest.createFile("index.html");
+        boolean actual = AppTest.createFile("resources/index1.html");
         assertEquals(expected, actual);
     }
 
@@ -20,7 +20,7 @@ public class TestIndexHtml {
         IndexHtml AppTest = new IndexHtml();
 
         boolean expected = true;
-        boolean actual = AppTest.writeFile("index.html","websiteName","websiteAuthor");
+        boolean actual = AppTest.writeFile("resources/index2.html","websiteName","websiteAuthor");
         assertEquals(expected, actual);
     }
 }

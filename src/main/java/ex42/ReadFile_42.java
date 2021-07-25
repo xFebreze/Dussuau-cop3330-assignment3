@@ -12,6 +12,10 @@ import java.util.Scanner;
 public class ReadFile_42 {
 
     public static List<String> Read(){
+        //make new array list
+        //make a File for the file we need to read
+        //user a scanner to scan file contents into the array list
+
         List<String> ret = new ArrayList<String>();
         File input_file = new File("resources/exercise42_input.txt");
         Scanner f_input = null;
